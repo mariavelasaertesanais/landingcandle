@@ -60,7 +60,7 @@
       gap: 2rem;
     }
     .intro-text {
-      flex: 1;
+      flex: 1 1 0;
     }
     .intro-text p {
       font-size: 1.1rem;
@@ -77,8 +77,8 @@
       font-weight: bold;
     }
     .illustration {
-      flex: 1;
-      text-align: center;
+      flex: 0 0 170px;
+      text-align: right;
     }
     .carousel {
       display: flex;
@@ -86,7 +86,7 @@
       gap: 1rem;
     }
     .carousel img {
-      max-width: 300px;
+      max-width: 150px;
       height: auto;
       border-radius: 10px;
       flex-shrink: 0;
@@ -102,6 +102,16 @@
       vertical-align: middle;
       margin-right: 6px;
     }
+    @media (max-width: 800px) {
+      .intro {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .illustration {
+        text-align: center;
+        flex: 1 1 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -116,7 +126,7 @@
     <section class="intro">
       <div class="intro-text">
         <h2>Uma nova forma de acender o autocuidado ✨</h2>
-        <p>Candle Goods é um livro de colorir inspirado no universo da Maria Velas. Cada ilustração traz uma vela como símbolo de bem-estar e pausa. É arte. É meditação. É um respiro criativo no seu dia.</p>
+        <p>Candle Goods é um livro de colorir inspirado no universo da Maria Velas. Cada ilustração traz uma vela como símbolo de bem-estar e pausa. É arte. É meditação. É um respiro criativo e um convite para você se cuidar enquanto colore.</p>
         <a class="cta" href="https://pay.hotmart.com/X100287160P">Quero meu Candle Goods</a>
       </div>
       <div class="illustration">
