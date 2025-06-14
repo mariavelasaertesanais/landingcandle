@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candle Goods – Maria Velas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dreaming+Outloud+Script&family=Dreaming+Outloud+All+Caps&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    :root {
+      --rosa: #e6a4b4;
+      --amarelo: #f5d481;
+      --verde: #c7d2b5;
+      --azul: #b3c3d6;
+      --bege: #d9b8a6;
+    }
+    body {
+      margin: 0;
+      font-family: 'Dreaming Outloud All Caps', sans-serif;
+      background: linear-gradient(90deg, var(--rosa), var(--amarelo), var(--verde), var(--azul), var(--bege));
+      background-size: 200% 200%;
+      animation: gradientMove 10s ease infinite;
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--rosa);
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--rosa);
+      font-size: 1rem;
+    }
+    h1 {
+      font-family: 'Dreaming Outloud Script', cursive;
+      font-size: 3rem;
+      color: var(--rosa);
+      margin: 1rem 0;
+    }
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+    .intro-text {
+      flex: 1;
+    }
+    .intro-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 2rem;
+      background-color: var(--rosa);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+    .illustration {
+      flex: 1;
+      text-align: center;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+    }
+    .carousel img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .social-icon {
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Candle Goods</h1>
+      <nav>
+        <a href="https://mariavelasartesanais.com">Site Maria Velas</a>
+      </nav>
+    </header>
+
+    <section class="intro">
+      <div class="intro-text">
+        <h2>Uma nova forma de acender o autocuidado ✨</h2>
+        <p>Candle Goods é um livro de colorir inspirado no universo da Maria Velas. Cada ilustração traz uma vela como símbolo de bem-estar e pausa. É arte. É meditação. É um respiro criativo no seu dia.</p>
+        <a class="cta" href="#">Quero meu Candle Goods</a>
+      </div>
+      <div class="illustration">
+        <div class="carousel">
+          <img src="images/image1" alt="Página 1 do Candle Goods">
+          <img src="images/image2" alt="Página 2 do Candle Goods">
+          <img src="images/image3" alt="Página 3 do Candle Goods">
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Siga nosso trabalho e veja mais no Instagram:</p>
+      <p>
+        <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/candlegoodss" target="_blank">@candlegoodss</a> |
+        <a href="https://www.instagram.com/mariavelasartesanais" target="_blank">@mariavelasartesanais</a> |
+        <a href="https://www.instagram.com/mariavelaspt" target="_blank">@mariavelaspt</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
